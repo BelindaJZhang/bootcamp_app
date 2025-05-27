@@ -11,10 +11,8 @@ from copy import deepcopy
 def load_data(path):
     df = pd.read_csv(path)
     return df
-
-mpg_df_raw = load_data(path="./data/mpg.csv")
+mpg_df_raw = load_data(path="C:/Users/juang/Desktop/bootcamp/Juan Zhang/03_Visualization/data/mpg.csv")
 mpg_df = deepcopy(mpg_df_raw)
-
 st.title("Introduction to Streamlit")
 st.header("MPG Data Exploration")
 
