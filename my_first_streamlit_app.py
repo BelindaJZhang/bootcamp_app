@@ -11,7 +11,7 @@ from copy import deepcopy
 def load_data(path):
     df = pd.read_csv(path)
     return df
-volcano_df_raw = load_data(path="C:/Users/juang/Desktop/bootcamp/project/bootcamp_app/data/volcano_ds_pop.csv")
+volcano_df_raw = load_data("volcano_ds_pop.csv")
 volcano_df = deepcopy(volcano_df_raw)
 st.title("Volcanoes in the World")
 st.header("Volcano Data Exploration")
